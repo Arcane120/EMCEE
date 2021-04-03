@@ -91,7 +91,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💾 SOURCE", callback_data="source_"),
+            text="💾 SOURCE", url="t.me/DaisyXNews"),
         InlineKeyboardButton(
             text="👥 SUPPORT", url="https://t.me/Emceesupport"
         ),
