@@ -87,15 +87,17 @@ buttons = [
     [
         InlineKeyboardButton(text="ℹ️ ABOUT", callback_data="masha_"),
         InlineKeyboardButton(text="📚 COMMANDS", callback_data="help_back"),
-        InlineKeyboardButton(text="🇮🇳 EMCEE DEVS", url="t.me/EmceeDevs"),
     ],
     [
         InlineKeyboardButton(
             text="💾 SOURCE", url="t.me/DaisyXNews"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/Emceesupport"
-        ),
+            text="👥 SUPPORT", url="https://t.me/Emceesupport"),
     ],
+    [  
+        InlineKeyboardButton(text="🇮🇳 EMCEE DEVS", url="t.me/EmceeDevs"
+    ),
+    ], 
 ]
 
 
