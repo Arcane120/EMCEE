@@ -17,12 +17,12 @@ async def is_nsfw(event):
         return False
     if lmao.video or lmao.video_note or lmao.sticker or lmao.gif:
         try:
-            starkstark = await event.client.download_media(lmao.media, thumb=-1)
+            starkstark = await tbot.download_media(lmao.media, thumb=-1)
         except:
             return False
     elif lmao.photo or lmao.sticker:
         try:
-            starkstark = await event.client.download_media(lmao.media)
+            starkstark = await tbot.download_media(lmao.media)
         except:
             return False
     img = starkstark
