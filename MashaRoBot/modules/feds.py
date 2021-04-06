@@ -1,20 +1,20 @@
 """
 Fully Written by SkemRand
 """
-from Evie import tbot, CMD_HELP, OWNER_ID
+from MashaRoBot import tbot, CMD_HELP, OWNER_ID
 import os, re, csv, json, time, uuid
-from Evie.function import is_admin
+from MashaRoBot.function import is_admin
 from io import BytesIO
-import Evie.modules.sql.feds_sql as sql
-from Evie.modules.sql.feds_sql import FEDS_SUBSCRIBER as luv
+import MashaRoBot.modules.sql.feds_sql as sql
+from MashaRoBot.modules.sql.feds_sql import FEDS_SUBSCRIBER as luv
 from telethon import *
 from telethon import Button
 from telethon.tl import *
 from telethon.tl.types import User
-from Evie import *
+from MashaRoBot import *
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageMediaDocument, DocumentAttributeFilename
-from Evie.events import register
+from MashaRoBot.events import register
 
 """
 Fully Written by ScamRand
