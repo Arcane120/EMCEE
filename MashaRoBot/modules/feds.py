@@ -36,7 +36,7 @@ BANNED_RIGHTS = ChatBannedRights(
 
 
 """
-Fully Written by RoseLoverX
+Fully Written by luns
 """
 
 async def get_user_from_event(event):
