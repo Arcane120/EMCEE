@@ -1,23 +1,23 @@
 """
-Fully Written by SkemRand
+Fully Written by RoseLoverX
 """
-from MashaRoBot import tbot, CMD_HELP, OWNER_ID
+from Evie import tbot, CMD_HELP, OWNER_ID
 import os, re, csv, json, time, uuid
-from MashaRoBot.function import is_admin
+from Evie.function import is_admin
 from io import BytesIO
-import MashaRoBot.modules.sql.feds_sql as sql
-from MashaRoBot.modules.sql.feds_sql import FEDS_SUBSCRIBER as luv
+import Evie.modules.sql.feds_sql as sql
+from Evie.modules.sql.feds_sql import FEDS_SUBSCRIBER as luv
 from telethon import *
 from telethon import Button
 from telethon.tl import *
 from telethon.tl.types import User
-from MashaRoBot import *
+from Evie import *
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageMediaDocument, DocumentAttributeFilename
-from MashaRoBot.events import register
+from Evie.events import register
 
 """
-Fully Written by ScamRand
+Fully Written by RoseLoverX
 """
 
 from telethon.tl.types import ChatBannedRights
@@ -36,7 +36,7 @@ BANNED_RIGHTS = ChatBannedRights(
 
 
 """
-Fully Written by luns
+Fully Written by RoseLoverX
 """
 
 async def get_user_from_event(event):
@@ -87,7 +87,7 @@ def is_user_fed_owner(fed_id, user_id):
 
 
 """
-Fully Written by Skemrand
+Fully Written by RoseLoverX
 """
 @register(pattern="^/newfed ?(.*)")
 async def new(event):
@@ -258,7 +258,7 @@ async def p(event):
             
 
 """
-Fully Written by SkemRand
+Fully Written by RoseLoverX
 """
 @tbot.on(events.CallbackQuery(pattern=r"fkfed(\_(.*))"))
 async def smex_fed(event):
@@ -278,7 +278,7 @@ async def smex_fed(event):
      return await event.edit(f"User [{fname}](tg://user?id={user}) is now an admin of {name} [{fed_id}]")
 
 """
-Fully Written by SkemLund
+Fully Written by RoseLoverX
 """
 @tbot.on(events.CallbackQuery(pattern=r"smex(\_(.*))"))
 async def smex(event):
@@ -377,7 +377,7 @@ async def info(event):
 
 
 """
-Fully Written by CumtiaLund
+Fully Written by RoseLoverX
 """
 @tbot.on(events.CallbackQuery(pattern=r"fedadm(\_(.*))"))
 async def smex_fed(event):
@@ -411,7 +411,7 @@ async def smex_fed(event):
   await event.reply(text)
 
 """
-Fully Written by skemrand
+Fully Written by RoseLoverX
 """
 @register(pattern="^/fban ?(.*)")
 async def _(event):
@@ -569,7 +569,7 @@ async def _(event):
     
 
 """
-Fully Written by lunSkem
+Fully Written by RoseLoverX
 """
 @register(pattern="^/unfban ?(.*)")
 async def unfban(event):
@@ -699,7 +699,7 @@ async def ligunset(event):
  await event.reply(f"The {name} federation has had its log location unset.")
 
 """
-Fully Written by chut aka lund
+Fully Written by AmarnathCdj aka RoseloverX
 """
 @register(pattern="^/subfed ?(.*)")
 async def sub(event):
@@ -727,7 +727,7 @@ async def sub(event):
  await event.reply(f"Federation {name} has now subscribed to {sname}. All fedbans in {sname} will now take effect in both feds.")
 
 """
-Fully Written by lund aka chut
+Fully Written by RoseLoverX aka AmarnathCdj
 """
 
 @register(pattern="^/unsubfed ?(.*)")
