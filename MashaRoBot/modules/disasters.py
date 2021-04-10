@@ -648,7 +648,7 @@ Group admins/group owners do not need these commands.
 Visit @{SUPPORT_CHAT} for more information.
 """
 
-SUDO_HANDLER = CommandHandler(("addsudo", "adddlegend"), addsudo)
+SUDO_HANDLER = CommandHandler(("addsudo", "addlegend"), addsudo)
 SUPPORT_HANDLER = CommandHandler(("addsupport", "addsatan"), addsupport)
 TIGER_HANDLER = CommandHandler(("addmonster"), addtiger)
 WHITELIST_HANDLER = CommandHandler(("addwhitelist", "addimmortal"), addwhitelist)
