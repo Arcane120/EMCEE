@@ -17,7 +17,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@pbot.on_message(filters.command(['song']))
+@pbot.on_message(filters.command(['Audio']))
 def song(client, message):
 
     user_id = message.from_user.id 
@@ -28,7 +28,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Finding the song...')
+    m = message.reply('🔎 Finding the Audio...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -51,7 +51,7 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("`Downloading Song... Please wait ⏱`")
+    m.edit("`Downloading Audio... Please wait ⏱`")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
