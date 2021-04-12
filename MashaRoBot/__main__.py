@@ -92,7 +92,7 @@ buttons = [
         InlineKeyboardButton(
             text="💾 SOURCE", url="t.me/DaisyXNews"),
         InlineKeyboardButton(
-            text="👥 SUPPORT", url="https://t.me/Emceesupport"),
+            text="👥 SUPPORT", url="https://t.me/Emcee_Support"),
     ],
     [  
         InlineKeyboardButton(text="🇮🇳 EMCEE DEVS", url="t.me/EmceeDevs"
