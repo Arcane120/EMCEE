@@ -17,7 +17,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@pbot.on_message(filters.command(['Audio']))
+@pbot.on_message(filters.command(['audio']))
 def song(client, message):
 
     user_id = message.from_user.id 
