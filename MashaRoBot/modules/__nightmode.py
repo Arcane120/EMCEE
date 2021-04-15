@@ -3,7 +3,7 @@ from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
 from MashaRoBot.events import register
-from MashaRoBot import tbot, OWNER_ID
+from MashaRoBot import telethn, OWNER_ID
 import os
 from telethon import *
 from telethon import Button, custom, events
