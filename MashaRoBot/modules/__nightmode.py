@@ -3,7 +3,7 @@ from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler 
 from telethon import functions
 from MashaRoBot.events import register
-from MashaRoBot import tbot, CMD_HELP, OWNER_ID
+from MashaRoBot import tbot, OWNER_ID
 import os
 from telethon import *
 from telethon import Button, custom, events
@@ -171,4 +171,3 @@ __help__ = """
 and Automatically openned at 6am(IST) To Prevent Night Spams.
 """
 
-CMD_HELP.update({file_helpo: [file_helpo, __help__]})
