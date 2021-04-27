@@ -1,14 +1,14 @@
 {
-      "name": "MashaRoBot",
+      "name": "EMCEE",
       "description": "Telegram group management bot.",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Masha"
+         "Emcee"
       ],   
-   "repository": "https://github.com/Mr-Dark-Prince/MashaRoBot",
+   "repository": "https://github.com/Aquila-14/EMCEE",
    "addons": [
       {
          "options": {
