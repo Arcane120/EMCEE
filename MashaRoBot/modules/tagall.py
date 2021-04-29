@@ -4,7 +4,7 @@ from MashaRoBot.function.pluginhelpers import admins_only, get_text
 
 from MashaRoBot.services.pyrogram import pbot
 
-@pbot.on_message(
+@telethen.on_message(
 
     filters.command("tagall") & ~filters.edited & ~filters.bot & ~filters.private
 
