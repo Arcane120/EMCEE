@@ -9,7 +9,7 @@ regex_upvote = r"^((?i)\+|\+\+|\+1|thank you|thanks|👍)$"
 regex_downvote = r"^(\-|\-\-|\-1|👎)$"
 
 
-@pbot.on_message(
+@telethn.on_message(
     filters.text
     & filters.group
     & filters.incoming
