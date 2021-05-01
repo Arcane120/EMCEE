@@ -1,7 +1,7 @@
 from MashaRoBot import telethn
 from MashaRoBot.utlis.dbfunctions import (update_karma, get_karma, get_karmas,
                                    int_to_alpha, alpha_to_int)
-from MashaRoBot.utlis.filter_groups import karma_positive_group, karma_negative_group
+from MashaRoBot.util.filter_groups import karma_positive_group, karma_negative_group
 from pyrogram import filters
 
 
