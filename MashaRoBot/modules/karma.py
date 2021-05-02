@@ -42,7 +42,7 @@ async def upvote(_, message):
     )
 
 
-@pbot.on_message(
+@telethn.on_message(
     filters.text
     & filters.group
     & filters.incoming
@@ -75,7 +75,7 @@ async def downvote(_, message):
     )
 
 
-@pbot.on_message(filters.command("karma") & filters.group)
+@telethn.on_message(filters.command("karma") & filters.group)
 
 async def karma(_, message):
     chat_id = message.chat.id
